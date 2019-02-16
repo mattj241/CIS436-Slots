@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Slot Machine</string>
+    <string name="zero">0</string>
+    <string name="BankAmount">Set Bank Amount:</string>
+    <string name="NewGame">New Game</string>
+    <string name="SetValue">Set Value</string>
+    <string name="Bank">Bank:</string>
+    <string name="DefaultVal">7</string>
+    <string name="PullLever">Pull Lever</string>
 </resources>
