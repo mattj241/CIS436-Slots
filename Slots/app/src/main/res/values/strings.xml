@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Slot Machine</string>
-    <string name="zero">0</string>
+    <string name="zero">$0</string>
     <string name="BankAmount">Set Bank Amount:</string>
     <string name="NewGame">New Game</string>
     <string name="SetValue">Set Value</string>

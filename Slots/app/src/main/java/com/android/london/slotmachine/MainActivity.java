@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         setValueBtn.setOnClickListener(this);
         pullLeverBtn.setOnClickListener(this);
         newGameBtn.setOnClickListener(this);
+        pullLeverBtn.setClickable(false);
     }
 
     @Override
@@ -152,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
     //     Examples include: Set Value button press, new game button press, and pull lever button press
     //Post: Bank status updated
     private void updateBankText(int amount){
-        bankAmount.setText(String.format("%s", amount));
+        bankAmount.setText(String.format("$%s", amount));
     }
 
     //Pre: Pull lever button was pulled and this function was called by the main slot machine handler
@@ -187,15 +188,15 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
 
         else if (highestMatchCounter == 3){
             if (matchList.get(0) < 5){
-                //Toast.makeText(MainActivity.this, "Mid Prize Awarded!" , Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Mid Prize Awarded!" , Toast.LENGTH_SHORT).show();
                 return inputBank += midPrize;
             }
             else if (matchList.get(0) >= 5 && matchList.get(0) <= 8){
-                //Toast.makeText(MainActivity.this, "Big Prize Awarded!" , Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Big Prize Awarded!" , Toast.LENGTH_SHORT).show();
                 return inputBank += bigPrize;
             }
             else {
-                //Toast.makeText(MainActivity.this, "Grand Prize Awarded!" , Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "Grand Prize Awarded!" , Toast.LENGTH_SHORT).show();
                 return inputBank += grandPrize;
             }
         }
